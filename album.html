@@ -19,6 +19,7 @@
             border-radius: 10px;
             position: relative;
             margin: 10px;
+            overflow: hidden;
         }
 
         .photo img {
@@ -41,7 +42,12 @@
 
         .photo-frame:hover .photo-detail {
             display: block;
-            background-color: rgba(176, 196, 222, 0.5);
+            background-color: rgba(176, 196, 222, 0.267);
+        }
+
+        .photo-frame:hover .photo {
+            transform: scale(1.2);
+            transition: transform 1s ease-in-out;
         }
     </style>
 </head>
